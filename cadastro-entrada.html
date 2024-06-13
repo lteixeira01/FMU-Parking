@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastrar Entrada</title>
+  <link rel="stylesheet" href="estilos/teste.css">
+</head>
+
+<body>
+
+  <body class="text-center">
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">FMU - Parking</h3>
+          <nav class="menu-masthead ">
+            <ul>
+              <li><a href="index.html">Voltar</a></li>
+              <li><a href="cadastro-veiculo.html">Cadastrar veiculo</a></li>
+              <li><a href="cadastro-cliente.html">Cadastrar cliente</a></li>
+            </ul>
+          </nav>
+          <div class="clearfix"></div>
+      </header>
+
+      <div class="clearfix"></div>
+      </header>
+      <form action="cadastro-entrada.php" method="post">
+        <h1>Cadastrar Entrada e Saída</h1>
+        <label for="horaentrada">Hora da entrada:</label>
+        <input type="datetime-local" name="reg_data_entrada" id="nova-data-hora">
+        <label for="horasaida">Hora da saida:</label>
+        <input type="datetime-local" name="reg_data_saida" id="nova-data-hora">    
+        <input type="text" name="cli_id" placeholder="CPF do cliente" required>
+        <input type="text" name="vei_placa" placeholder="Placa do veiculo" required><br>
+        <input type="submit" value="Enviar" name="enviar">
+      </form>
+
+  </body>
+
+</html>
